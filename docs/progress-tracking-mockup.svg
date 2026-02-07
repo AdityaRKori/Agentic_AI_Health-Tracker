@@ -1,0 +1,261 @@
+<svg width="1200" height="1100" viewBox="0 0 1200 1100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lightBackground" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f7fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8f5f7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="chartGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:0.3" />
+    </linearGradient>
+    <linearGradient id="chartGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1100" fill="url(#lightBackground)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+  <text x="50" y="50" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#333333">Progress Tracking & Analytics</text>
+
+  <!-- Time Range Selector -->
+  <g id="time-range">
+    <rect x="50" y="100" width="1100" height="50" rx="8" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+    <rect x="60" y="110" width="60" height="30" rx="6" fill="#3498db" stroke="none"/>
+    <text x="90" y="130" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">7 Days</text>
+
+    <rect x="130" y="110" width="60" height="30" rx="6" fill="#f0f0f0" stroke="#e0e6ed" stroke-width="1"/>
+    <text x="160" y="130" font-family="Arial, sans-serif" font-size="11" fill="#666666" text-anchor="middle">30 Days</text>
+
+    <rect x="200" y="110" width="60" height="30" rx="6" fill="#f0f0f0" stroke="#e0e6ed" stroke-width="1"/>
+    <text x="230" y="130" font-family="Arial, sans-serif" font-size="11" fill="#666666" text-anchor="middle">90 Days</text>
+
+    <rect x="270" y="110" width="60" height="30" rx="6" fill="#f0f0f0" stroke="#e0e6ed" stroke-width="1"/>
+    <text x="300" y="130" font-family="Arial, sans-serif" font-size="11" fill="#666666" text-anchor="middle">1 Year</text>
+
+    <text x="1020" y="130" font-family="Arial, sans-serif" font-size="11" fill="#3498db">📊 Export Data</text>
+  </g>
+
+  <!-- Key Metrics Summary -->
+  <g id="metrics-summary">
+    <rect x="50" y="170" width="260" height="100" rx="8" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+    <text x="70" y="190" font-family="Arial, sans-serif" font-size="11" fill="#999999" font-weight="bold">AVG HEART RATE</text>
+    <text x="70" y="225" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#3498db">72</text>
+    <text x="150" y="225" font-family="Arial, sans-serif" font-size="14" fill="#999999">bpm</text>
+    <text x="70" y="250" font-family="Arial, sans-serif" font-size="10" fill="#2ecc71">↓ 3% from last week</text>
+
+    <rect x="330" y="170" width="260" height="100" rx="8" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+    <text x="350" y="190" font-family="Arial, sans-serif" font-size="11" fill="#999999" font-weight="bold">AVG BLOOD PRESSURE</text>
+    <text x="350" y="225" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#e74c3c">120/80</text>
+    <text x="350" y="250" font-family="Arial, sans-serif" font-size="10" fill="#2ecc71">✓ Optimal Range</text>
+
+    <rect x="610" y="170" width="260" height="100" rx="8" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+    <text x="630" y="190" font-family="Arial, sans-serif" font-size="11" fill="#999999" font-weight="bold">HEALTH SCORE TREND</text>
+    <text x="630" y="225" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2ecc71">↑ 8%</text>
+    <text x="630" y="250" font-family="Arial, sans-serif" font-size="10" fill="#2ecc71">Excellent improvement</text>
+
+    <rect x="890" y="170" width="260" height="100" rx="8" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+    <text x="910" y="190" font-family="Arial, sans-serif" font-size="11" fill="#999999" font-weight="bold">CONSISTENCY</text>
+    <text x="910" y="225" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#f39c12">94%</text>
+    <text x="910" y="250" font-family="Arial, sans-serif" font-size="10" fill="#f39c12">Very consistent tracking</text>
+  </g>
+
+  <!-- Heart Rate Trend Chart -->
+  <g id="hr-chart">
+    <rect x="50" y="300" width="540" height="280" rx="8" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+    <text x="70" y="325" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">Heart Rate Trend (7 Days)</text>
+
+    <!-- Chart area -->
+    <rect x="70" y="345" width="500" height="200" fill="#f8f9fa" rx="4"/>
+
+    <!-- Y-axis labels -->
+    <text x="60" y="355" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="end">100</text>
+    <text x="60" y="395" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="end">75</text>
+    <text x="60" y="435" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="end">50</text>
+    <text x="60" y="475" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="end">25</text>
+
+    <!-- Grid lines -->
+    <line x1="70" y1="390" x2="570" y2="390" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="2,2"/>
+    <line x1="70" y1="430" x2="570" y2="430" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="2,2"/>
+
+    <!-- Line chart -->
+    <polyline points="90,415 150,390 210,405 270,385 330,400 390,380 450,395 510,388"
+              stroke="#3498db" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Data points -->
+    <circle cx="90" cy="415" r="4" fill="#3498db"/>
+    <circle cx="150" cy="390" r="4" fill="#3498db"/>
+    <circle cx="210" cy="405" r="4" fill="#3498db"/>
+    <circle cx="270" cy="385" r="4" fill="#3498db"/>
+    <circle cx="330" cy="400" r="4" fill="#3498db"/>
+    <circle cx="390" cy="380" r="4" fill="#3498db"/>
+    <circle cx="450" cy="395" r="4" fill="#3498db"/>
+    <circle cx="510" cy="388" r="4" fill="#3498db"/>
+
+    <!-- X-axis labels -->
+    <text x="90" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Mon</text>
+    <text x="150" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Tue</text>
+    <text x="210" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Wed</text>
+    <text x="270" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Thu</text>
+    <text x="330" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Fri</text>
+    <text x="390" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Sat</text>
+    <text x="450" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Sun</text>
+    <text x="510" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Today</text>
+
+    <!-- Stats -->
+    <g id="chart-stats">
+      <rect x="70" y="595" width="150" height="50" rx="4" fill="#f0f7ff" stroke="#3498db" stroke-width="1"/>
+      <text x="80" y="610" font-family="Arial, sans-serif" font-size="9" fill="#666666">Average: 72 bpm</text>
+      <text x="80" y="625" font-family="Arial, sans-serif" font-size="9" fill="#666666">Max: 92 bpm | Min: 68 bpm</text>
+
+      <rect x="235" y="595" width="150" height="50" rx="4" fill="#f0fff0" stroke="#2ecc71" stroke-width="1"/>
+      <text x="245" y="610" font-family="Arial, sans-serif" font-size="9" fill="#666666">Trend: Stable</text>
+      <text x="245" y="625" font-family="Arial, sans-serif" font-size="9" fill="#666666">Status: Healthy ✓</text>
+    </g>
+  </g>
+
+  <!-- Blood Pressure Trend Chart -->
+  <g id="bp-chart">
+    <rect x="610" y="300" width="540" height="280" rx="8" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+    <text x="630" y="325" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">Blood Pressure Trend (7 Days)</text>
+
+    <!-- Chart area -->
+    <rect x="630" y="345" width="500" height="200" fill="#f8f9fa" rx="4"/>
+
+    <!-- Y-axis labels -->
+    <text x="620" y="355" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="end">150</text>
+    <text x="620" y="395" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="end">120</text>
+    <text x="620" y="435" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="end">90</text>
+    <text x="620" y="475" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="end">60</text>
+
+    <!-- Grid lines -->
+    <line x1="630" y1="390" x2="1130" y2="390" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="2,2"/>
+    <line x1="630" y1="430" x2="1130" y2="430" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="2,2"/>
+
+    <!-- Line chart for systolic -->
+    <polyline points="650,395 710,390 770,398 830,388 890,392 950,385 1010,393 1070,389"
+              stroke="#e74c3c" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Line chart for diastolic -->
+    <polyline points="650,435 710,430 770,438 830,428 890,432 950,425 1010,433 1070,429"
+              stroke="#3498db" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Data points for systolic -->
+    <circle cx="650" cy="395" r="3" fill="#e74c3c"/>
+    <circle cx="710" cy="390" r="3" fill="#e74c3c"/>
+    <circle cx="770" cy="398" r="3" fill="#e74c3c"/>
+    <circle cx="830" cy="388" r="3" fill="#e74c3c"/>
+    <circle cx="890" cy="392" r="3" fill="#e74c3c"/>
+    <circle cx="950" cy="385" r="3" fill="#e74c3c"/>
+    <circle cx="1010" cy="393" r="3" fill="#e74c3c"/>
+    <circle cx="1070" cy="389" r="3" fill="#e74c3c"/>
+
+    <!-- X-axis labels -->
+    <text x="650" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Mon</text>
+    <text x="710" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Tue</text>
+    <text x="770" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Wed</text>
+    <text x="830" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Thu</text>
+    <text x="890" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Fri</text>
+    <text x="950" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Sat</text>
+    <text x="1010" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Sun</text>
+    <text x="1070" y="570" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Today</text>
+
+    <!-- Legend -->
+    <line x1="640" y1="615" x2="660" y2="615" stroke="#e74c3c" stroke-width="2"/>
+    <text x="670" y="620" font-family="Arial, sans-serif" font-size="9" fill="#666666">Systolic</text>
+
+    <line x1="760" y1="615" x2="780" y2="615" stroke="#3498db" stroke-width="2"/>
+    <text x="790" y="620" font-family="Arial, sans-serif" font-size="9" fill="#666666">Diastolic</text>
+
+    <!-- Stats -->
+    <rect x="630" y="595" width="220" height="50" rx="4" fill="#fff5f5" stroke="#e74c3c" stroke-width="1"/>
+    <text x="640" y="610" font-family="Arial, sans-serif" font-size="9" fill="#666666">Average: 120/80 mmHg</text>
+    <text x="640" y="625" font-family="Arial, sans-serif" font-size="9" fill="#666666">Status: Normal ✓</text>
+  </g>
+
+  <!-- Health Achievements -->
+  <g id="achievements">
+    <text x="50" y="630" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">Your Achievements</text>
+
+    <!-- Badge 1 -->
+    <rect x="50" y="650" width="140" height="160" rx="8" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+    <circle cx="120" cy="700" r="30" fill="#ffd700" opacity="0.2"/>
+    <text x="120" y="710" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">🏃</text>
+    <text x="120" y="755" font-family="Arial, sans-serif" font-size="10" fill="#333333" text-anchor="middle" font-weight="bold">Active</text>
+    <text x="120" y="770" font-family="Arial, sans-serif" font-size="8" fill="#999999" text-anchor="middle">Exercised 5+ days</text>
+    <text x="120" y="800" font-family="Arial, sans-serif" font-size="9" fill="#f39c12" text-anchor="middle" font-weight="bold">Unlocked</text>
+
+    <!-- Badge 2 -->
+    <rect x="210" y="650" width="140" height="160" rx="8" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+    <circle cx="280" cy="700" r="30" fill="#ffd700" opacity="0.2"/>
+    <text x="280" y="710" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">💪</text>
+    <text x="280" y="755" font-family="Arial, sans-serif" font-size="10" fill="#333333" text-anchor="middle" font-weight="bold">Strong</text>
+    <text x="280" y="770" font-family="Arial, sans-serif" font-size="8" fill="#999999" text-anchor="middle">BP in normal range</text>
+    <text x="280" y="800" font-family="Arial, sans-serif" font-size="9" fill="#f39c12" text-anchor="middle" font-weight="bold">Unlocked</text>
+
+    <!-- Badge 3 -->
+    <rect x="370" y="650" width="140" height="160" rx="8" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+    <circle cx="440" cy="700" r="30" fill="#ccc" opacity="0.2"/>
+    <text x="440" y="710" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">🎯</text>
+    <text x="440" y="755" font-family="Arial, sans-serif" font-size="10" fill="#999999" text-anchor="middle" font-weight="bold">Goal Setter</text>
+    <text x="440" y="770" font-family="Arial, sans-serif" font-size="8" fill="#999999" text-anchor="middle">Set 3 health goals</text>
+    <text x="440" y="800" font-family="Arial, sans-serif" font-size="9" fill="#999999" text-anchor="middle">Locked</text>
+
+    <!-- Streak -->
+    <rect x="530" y="650" width="620" height="160" rx="8" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+    <text x="550" y="675" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">Your Tracking Streak</text>
+
+    <!-- Streak visualization -->
+    <rect x="550" y="700" width="30" height="30" rx="4" fill="#2ecc71"/>
+    <text x="565" y="720" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">✓</text>
+    <text x="565" y="745" font-family="Arial, sans-serif" font-size="8" fill="#999999" text-anchor="middle">Today</text>
+
+    <rect x="595" y="700" width="30" height="30" rx="4" fill="#2ecc71"/>
+    <text x="610" y="720" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">✓</text>
+    <text x="610" y="745" font-family="Arial, sans-serif" font-size="8" fill="#999999" text-anchor="middle">Yest</text>
+
+    <rect x="640" y="700" width="30" height="30" rx="4" fill="#2ecc71"/>
+    <text x="655" y="720" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">✓</text>
+    <text x="655" y="745" font-family="Arial, sans-serif" font-size="8" fill="#999999" text-anchor="middle">-2</text>
+
+    <rect x="685" y="700" width="30" height="30" rx="4" fill="#2ecc71"/>
+    <text x="700" y="720" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">✓</text>
+    <text x="700" y="745" font-family="Arial, sans-serif" font-size="8" fill="#999999" text-anchor="middle">-3</text>
+
+    <rect x="730" y="700" width="30" height="30" rx="4" fill="#2ecc71"/>
+    <text x="745" y="720" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">✓</text>
+    <text x="745" y="745" font-family="Arial, sans-serif" font-size="8" fill="#999999" text-anchor="middle">-4</text>
+
+    <rect x="775" y="700" width="30" height="30" rx="4" fill="#2ecc71"/>
+    <text x="790" y="720" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">✓</text>
+    <text x="790" y="745" font-family="Arial, sans-serif" font-size="8" fill="#999999" text-anchor="middle">-5</text>
+
+    <rect x="820" y="700" width="30" height="30" rx="4" fill="#2ecc71"/>
+    <text x="835" y="720" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">✓</text>
+    <text x="835" y="745" font-family="Arial, sans-serif" font-size="8" fill="#999999" text-anchor="middle">-6</text>
+
+    <text x="550" y="775" font-family="Arial, sans-serif" font-size="14" fill="#2ecc71" font-weight="bold">7 Day Streak! 🔥</text>
+    <text x="550" y="795" font-family="Arial, sans-serif" font-size="10" fill="#666666">Keep it up! You're doing amazing with your health tracking.</text>
+  </g>
+
+  <!-- Next Recommendations -->
+  <g id="recommendations">
+    <text x="50" y="870" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333333">Next Steps & Goals</text>
+
+    <rect x="50" y="890" width="1100" height="180" rx="8" fill="#ffffff" stroke="#e0e6ed" stroke-width="1"/>
+
+    <text x="70" y="915" font-family="Arial, sans-serif" font-size="12" fill="#333333" font-weight="bold">📊 Upcoming Goals (Next 30 Days)</text>
+
+    <text x="70" y="945" font-family="Arial, sans-serif" font-size="11" fill="#2ecc71" font-weight="bold">✓ Maintain Heart Rate Below 75 bpm</text>
+    <text x="70" y="960" font-family="Arial, sans-serif" font-size="10" fill="#999999">Progress: 6/7 days completed | Motivation: Continue exercise routine</text>
+
+    <text x="70" y="990" font-family="Arial, sans-serif" font-size="11" fill="#3498db" font-weight="bold">→ Reach 10,000 Steps Daily</text>
+    <text x="70" y="1005" font-family="Arial, sans-serif" font-size="10" fill="#999999">Progress: 5/7 days completed | Motivation: Walk 30 minutes daily</text>
+
+    <text x="70" y="1035" font-family="Arial, sans-serif" font-size="11" fill="#f39c12" font-weight="bold">→ Maintain Blood Pressure Readings</text>
+    <text x="70" y="1050" font-family="Arial, sans-serif" font-size="10" fill="#999999">Progress: On track | Motivation: Check once daily, keep stress low</text>
+  </g>
+</svg>
