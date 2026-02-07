@@ -2,7 +2,7 @@
 
 <div align="center">
   <img 
-    src="./Gemini_Generated_Image_e74og5e74og5e74o.png" 
+    src="./images/logo.png" 
     alt="AI Agentic Health Tracker Logo"
     width="420"
   />
@@ -35,31 +35,31 @@
 ---
 
 ## In-App Display
-<div align="center"> <img src="./Screenshot 2026-02-07 185907.png" width="100%" alt="Health Check-up Dashboard"/>
+<img src="./images/health-checkup.png" width="100%" alt="Health Check-up Dashboard"/>
 
 <br/><br/>
 
-<img src="./Screenshot 2026-02-07 185921.png" width="100%" alt="Medical Image Analysis"/>
+<img src="./images/image-analysis.png" width="100%" alt="Medical Image Analysis"/>
 
 <br/><br/>
 
-<img src="./Screenshot 2026-02-07 185938.png" width="100%" alt="Global Disease Tracker"/>
+<img src="./images/disease-tracker.png" width="100%" alt="Global Disease Tracker"/>
 
 <br/><br/>
 
-<img src="./Screenshot 2026-02-07 185954.png" width="100%" alt="Progress Tracking Dashboard"/>
+<img src="./images/progress-tracking.png" width="100%" alt="Progress Tracking Dashboard"/>
 
 <br/><br/>
 
-<img src="./Screenshot 2026-02-07 190035.png" width="100%" alt="Health Trends & Prediction"/>
+<img src="./images/prediction.png" width="100%" alt="Health Trends & Prediction"/>
 
 <br/><br/>
 
-<img src="./Screenshot 2026-02-07 190053.png" width="100%" alt="Overall Health Assessment"/>
+<img src="./images/health-assessment.png" width="100%" alt="Overall Health Assessment"/>
 
 <br/><br/>
 
-<img src="./Screenshot 2026-02-07 190143.png" width="100%" alt="AI Generated Health Report"/> </div>
+<img src="./images/health-report.png" width="100%" alt="AI Generated Health Report"/> </div>
 
 ---
 
