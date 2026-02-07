@@ -1,28 +1,13 @@
 # AI Agentic Health Tracker
 
 <div align="center">
-  <svg width="200" height="200" viewBox="0 0 200 200">
-    <!-- Circular gradient background -->
-    <defs>
-      <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#9b59b6;stop-opacity:1" />
-      </linearGradient>
-    </defs>
+  <img 
+    src="./Gemini_Generated_Image_e74og5e74og5e74o.png" 
+    alt="AI Agentic Health Tracker Logo"
+    width="420"
+  />
 
-    <!-- Circle background -->
-    <circle cx="100" cy="100" r="95" fill="url(#logoGradient)" opacity="0.1" stroke="url(#logoGradient)" stroke-width="2"/>
-
-    <!-- Heart icon -->
-    <path d="M100,140 C60,120 40,100 40,80 C40,65 50,55 60,55 C70,55 80,65 100,80 C120,65 130,55 140,55 C150,55 160,65 160,80 C160,100 140,120 100,140 Z"
-          fill="url(#logoGradient)" stroke="none"/>
-
-    <!-- AI lines -->
-    <line x1="50" y1="160" x2="80" y2="180" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6"/>
-    <line x1="120" y1="160" x2="150" y2="180" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6"/>
-    <circle cx="65" cy="170" r="3" fill="url(#logoGradient)"/>
-    <circle cx="135" cy="170" r="3" fill="url(#logoGradient)"/>
-  </svg>
+  <br/><br/>
 
   <h2>Comprehensive AI-Powered Health Monitoring & Analysis Platform</h2>
 
@@ -46,6 +31,35 @@
 - [Technology Stack](#technology-stack)
 - [How to Use](#how-to-use)
 - [Privacy & Security](#privacy--security)
+
+---
+
+## In-App Display
+<div align="center"> <img src="./Screenshot 2026-02-07 185907.png" width="100%" alt="Health Check-up Dashboard"/>
+
+<br/><br/>
+
+<img src="./Screenshot 2026-02-07 185921.png" width="100%" alt="Medical Image Analysis"/>
+
+<br/><br/>
+
+<img src="./Screenshot 2026-02-07 185938.png" width="100%" alt="Global Disease Tracker"/>
+
+<br/><br/>
+
+<img src="./Screenshot 2026-02-07 185954.png" width="100%" alt="Progress Tracking Dashboard"/>
+
+<br/><br/>
+
+<img src="./Screenshot 2026-02-07 190035.png" width="100%" alt="Health Trends & Prediction"/>
+
+<br/><br/>
+
+<img src="./Screenshot 2026-02-07 190053.png" width="100%" alt="Overall Health Assessment"/>
+
+<br/><br/>
+
+<img src="./Screenshot 2026-02-07 190143.png" width="100%" alt="AI Generated Health Report"/> </div>
 
 ---
 
