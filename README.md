@@ -17,6 +17,12 @@
     </a>
   </p>
 
+  <p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSefh93AtB0ghgun9qtMT5Dx0Ugi1ZFDaohSwoq2Mpxrz6SO4Q/viewform?usp=header" style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #e74c3c, #9b59b6); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 20px;">
+  ► Launch Form
+  </a>
+  </p>
+
   <p><strong>Created by Aditya K</strong> | Capstone Project</p>
 </div>
 
