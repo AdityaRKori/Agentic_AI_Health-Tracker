@@ -1,0 +1,157 @@
+<svg width="1200" height="950" viewBox="0 0 1200 950" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="darkThemeBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="communityGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1abc9c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a085;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Background -->
+  <rect width="1200" height="950" fill="url(#darkThemeBg)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="90" fill="#2d3e50" stroke="#3d4e5f" stroke-width="1"/>
+  <text x="50" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff">Community Health & Disease Tracking</text>
+
+  <!-- Location Filter -->
+  <rect x="50" y="110" width="1100" height="50" rx="8" fill="#2a3f54" stroke="#1abc9c" stroke-width="1"/>
+  <text x="70" y="130" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8" font-weight="bold">YOUR LOCATION:</text>
+  <text x="200" y="130" font-family="Arial, sans-serif" font-size="13" fill="#e8f4f8">Mumbai, Maharashtra, India</text>
+  <text x="900" y="130" font-family="Arial, sans-serif" font-size="11" fill="#1abc9c" text-decoration="underline">Change Location</text>
+
+  <!-- Global Stats Row -->
+  <g id="global-stats">
+    <!-- Total Cases -->
+    <rect x="50" y="180" width="260" height="120" rx="8" fill="#2a3f54" stroke="#e74c3c" stroke-width="1"/>
+    <text x="70" y="200" font-family="Arial, sans-serif" font-size="11" fill="#e74c3c" font-weight="bold">GLOBAL TRACKED DISEASES</text>
+    <text x="70" y="230" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#e74c3c">142</text>
+    <text x="70" y="250" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Active disease outbreaks monitored</text>
+    <text x="70" y="268" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Last updated: 2 hours ago</text>
+
+    <!-- Active Alerts -->
+    <rect x="340" y="180" width="260" height="120" rx="8" fill="#2a3f54" stroke="#f39c12" stroke-width="1"/>
+    <text x="360" y="200" font-family="Arial, sans-serif" font-size="11" fill="#f39c12" font-weight="bold">ACTIVE ALERTS IN REGION</text>
+    <text x="360" y="230" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#f39c12">5</text>
+    <text x="360" y="250" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Diseases affecting your area</text>
+    <text x="360" y="268" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Requires attention</text>
+
+    <!-- Risk Level -->
+    <rect x="630" y="180" width="260" height="120" rx="8" fill="#2a3f54" stroke="#2ecc71" stroke-width="1"/>
+    <text x="650" y="200" font-family="Arial, sans-serif" font-size="11" fill="#2ecc71" font-weight="bold">YOUR RISK LEVEL</text>
+    <text x="650" y="230" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2ecc71">LOW</text>
+    <text x="650" y="250" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Based on your location & health</text>
+    <text x="650" y="268" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Continue preventive measures</text>
+
+    <!-- Vaccination Status -->
+    <rect x="920" y="180" width="230" height="120" rx="8" fill="#2a3f54" stroke="#3498db" stroke-width="1"/>
+    <text x="940" y="200" font-family="Arial, sans-serif" font-size="11" fill="#3498db" font-weight="bold">VACCINATION STATUS</text>
+    <text x="940" y="230" font-family="Arial, sans-serif" font-size="12" fill="#e8f4f8">✓ COVID-19</text>
+    <text x="940" y="250" font-family="Arial, sans-serif" font-size="12" fill="#e8f4f8">✓ Influenza</text>
+    <text x="940" y="268" font-family="Arial, sans-serif" font-size="12" fill="#e8f4f8">⚠ Yellow Fever (Pending)</text>
+  </g>
+
+  <!-- Active Disease Section -->
+  <text x="50" y="340" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#ffffff">Active Diseases in Your Region</text>
+
+  <!-- Disease Cards -->
+  <g id="disease-cards">
+    <!-- Disease 1: COVID-19 -->
+    <rect x="50" y="360" width="520" height="160" rx="8" fill="#2a3f54" stroke="#3498db" stroke-width="1.5"/>
+    <rect x="65" y="375" width="35" height="35" rx="6" fill="#3498db" opacity="0.2"/>
+    <text x="82" y="398" font-family="Arial, sans-serif" font-size="18" fill="#3498db" text-anchor="middle">🦠</text>
+
+    <text x="115" y="375" font-family="Arial, sans-serif" font-size="13" fill="#e8f4f8" font-weight="bold">COVID-19</text>
+    <text x="115" y="393" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Communicable | Viral Infection</text>
+
+    <g id="disease1-stats">
+      <text x="115" y="420" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Global Cases: <tspan fill="#e8f4f8" font-weight="bold">754.2M</tspan></text>
+      <text x="115" y="437" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Deaths: <tspan fill="#e74c3c" font-weight="bold">6.8M</tspan></text>
+      <text x="310" y="420" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Your Region Cases: <tspan fill="#e8f4f8" font-weight="bold">2.1M</tspan></text>
+      <text x="310" y="437" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Local Risk: <tspan fill="#2ecc71" font-weight="bold">Decreasing</tspan></text>
+    </g>
+
+    <text x="115" y="463" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">→ Key Prevention: Vaccination, Mask use in crowded areas</text>
+    <text x="115" y="480" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">→ Symptoms: Fever, Cough, Fatigue, Loss of taste/smell</text>
+    <text x="115" y="497" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">→ Treatment: Rest, Antiviral drugs for severe cases</text>
+
+    <!-- Disease 2: Influenza -->
+    <rect x="630" y="360" width="520" height="160" rx="8" fill="#2a3f54" stroke="#f39c12" stroke-width="1.5"/>
+    <rect x="645" y="375" width="35" height="35" rx="6" fill="#f39c12" opacity="0.2"/>
+    <text x="662" y="398" font-family="Arial, sans-serif" font-size="18" fill="#f39c12" text-anchor="middle">🌡️</text>
+
+    <text x="695" y="375" font-family="Arial, sans-serif" font-size="13" fill="#e8f4f8" font-weight="bold">Seasonal Influenza</text>
+    <text x="695" y="393" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Communicable | Viral Infection</text>
+
+    <g id="disease2-stats">
+      <text x="695" y="420" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Annual Cases: <tspan fill="#e8f4f8" font-weight="bold">1 Billion+</tspan></text>
+      <text x="695" y="437" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Deaths: <tspan fill="#e74c3c" font-weight="bold">250K-500K</tspan></text>
+      <text x="890" y="420" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Your Region Cases: <tspan fill="#e8f4f8" font-weight="bold">45K</tspan></text>
+      <text x="890" y="437" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Trend: <tspan fill="#f39c12" font-weight="bold">Increasing</tspan></text>
+    </g>
+
+    <text x="695" y="463" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">→ Key Prevention: Annual vaccination, Hand hygiene</text>
+    <text x="695" y="480" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">→ Symptoms: High fever, Cough, Body aches</text>
+    <text x="695" y="497" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">→ Treatment: Antivirals within 48 hours of symptoms</text>
+  </g>
+
+  <!-- More Disease Cards -->
+  <g id="disease-cards-2">
+    <!-- Disease 3: Dengue -->
+    <rect x="50" y="550" width="520" height="160" rx="8" fill="#2a3f54" stroke="#e74c3c" stroke-width="1.5"/>
+    <rect x="65" y="565" width="35" height="35" rx="6" fill="#e74c3c" opacity="0.2"/>
+    <text x="82" y="588" font-family="Arial, sans-serif" font-size="18" fill="#e74c3c" text-anchor="middle">🦟</text>
+
+    <text x="115" y="565" font-family="Arial, sans-serif" font-size="13" fill="#e8f4f8" font-weight="bold">Dengue Fever</text>
+    <text x="115" y="583" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Communicable | Mosquito-borne Viral</text>
+
+    <g id="disease3-stats">
+      <text x="115" y="610" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Annual Cases: <tspan fill="#e8f4f8" font-weight="bold">390 Million</tspan></text>
+      <text x="115" y="627" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Deaths: <tspan fill="#e74c3c" font-weight="bold">25K</tspan></text>
+      <text x="310" y="610" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Your Region Cases: <tspan fill="#e8f4f8" font-weight="bold">8,450</tspan></text>
+      <text x="310" y="627" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Risk: <tspan fill="#f39c12" font-weight="bold">Moderate</tspan></text>
+    </g>
+
+    <text x="115" y="653" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">→ Key Prevention: Mosquito protection, Insect repellent</text>
+    <text x="115" y="670" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">→ Symptoms: High fever, Severe headache, Joint pain</text>
+    <text x="115" y="687" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">→ Treatment: Supportive care, Monitor platelet counts</text>
+
+    <!-- Disease 4: Cholera -->
+    <rect x="630" y="550" width="520" height="160" rx="8" fill="#2a3f54" stroke="#1abc9c" stroke-width="1.5"/>
+    <rect x="645" y="565" width="35" height="35" rx="6" fill="#1abc9c" opacity="0.2"/>
+    <text x="662" y="588" font-family="Arial, sans-serif" font-size="18" fill="#1abc9c" text-anchor="middle">💧</text>
+
+    <text x="695" y="565" font-family="Arial, sans-serif" font-size="13" fill="#e8f4f8" font-weight="bold">Cholera</text>
+    <text x="695" y="583" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Communicable | Waterborne Bacterial</text>
+
+    <g id="disease4-stats">
+      <text x="695" y="610" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Annual Cases: <tspan fill="#e8f4f8" font-weight="bold">1.3-4 Million</tspan></text>
+      <text x="695" y="627" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Deaths: <tspan fill="#e74c3c" font-weight="bold">21K-143K</tspan></text>
+      <text x="890" y="610" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Your Region Cases: <tspan fill="#e8f4f8" font-weight="bold">1,200</tspan></text>
+      <text x="890" y="627" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Risk: <tspan fill="#2ecc71" font-weight="bold">Low</tspan></text>
+    </g>
+
+    <text x="695" y="653" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">→ Key Prevention: Clean water, Vaccination available</text>
+    <text x="695" y="670" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">→ Symptoms: Watery diarrhea, Vomiting, Dehydration</text>
+    <text x="695" y="687" font-family="Arial, sans-serif" font-size="9" fill="#94a3b8">→ Treatment: Oral rehydration solutions, Antibiotics</text>
+  </g>
+
+  <!-- Public Health Measures -->
+  <text x="50" y="760" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Recommended Public Health Measures</text>
+
+  <rect x="50" y="780" width="1100" height="130" rx="8" fill="#2a3f54" stroke="#2ecc71" stroke-width="1"/>
+  <text x="70" y="805" font-family="Arial, sans-serif" font-size="12" fill="#2ecc71" font-weight="bold">✓ Personal Hygiene</text>
+  <text x="70" y="825" font-family="Arial, sans-serif" font-size="11" fill="#e8f4f8">Wash hands frequently with soap and water. Practice respiratory hygiene (cover coughs/sneezes).</text>
+
+  <text x="70" y="855" font-family="Arial, sans-serif" font-size="12" fill="#2ecc71" font-weight="bold">✓ Environmental Protection</text>
+  <text x="70" y="875" font-family="Arial, sans-serif" font-size="11" fill="#e8f4f8">Use clean drinking water. Avoid contaminated food. Ensure proper sanitation in your area.</text>
+
+  <text x="550" y="805" font-family="Arial, sans-serif" font-size="12" fill="#2ecc71" font-weight="bold">✓ Vaccination</text>
+  <text x="550" y="825" font-family="Arial, sans-serif" font-size="11" fill="#e8f4f8">Stay up-to-date with recommended immunizations for your region.</text>
+
+  <text x="550" y="855" font-family="Arial, sans-serif" font-size="12" fill="#2ecc71" font-weight="bold">✓ Medical Care</text>
+  <text x="550" y="875" font-family="Arial, sans-serif" font-size="11" fill="#e8f4f8">Seek immediate medical help if you develop symptoms of any disease.</text>
+</svg>
